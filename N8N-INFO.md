@@ -2,6 +2,7 @@
 
 | Field | Value |
 | --- | --- |
+| GitHub | https://github.com/Youtube-Transcript-Dev/n8n-nodes-monitormentions |
 | npm package | `n8n-nodes-monitormentions@0.1.0` |
 | Install | Settings → Community nodes → `n8n-nodes-monitormentions` |
 | Site | https://www.monitormentions.com |
