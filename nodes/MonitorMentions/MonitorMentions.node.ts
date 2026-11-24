@@ -34,28 +34,10 @@ export class MonitorMentions implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
-						name: 'Get Credits',
-						value: 'getCredits',
-						action: 'Get credit balance',
-						description: 'Return account email and credits remaining',
-					},
-					{
-						name: 'List Brands',
-						value: 'listBrands',
-						action: 'List brands',
-						description: 'List brands in the catalogue',
-					},
-					{
 						name: 'Get Brand',
 						value: 'getBrand',
 						action: 'Get a brand',
 						description: 'Get one brand by slug (includes hype summary)',
-					},
-					{
-						name: 'Get Brand Hype',
-						value: 'getBrandHype',
-						action: 'Get brand hype',
-						description: 'Hype score and history for a brand',
 					},
 					{
 						name: 'Get Brand History',
@@ -64,10 +46,28 @@ export class MonitorMentions implements INodeType {
 						description: 'Follower history for a brand',
 					},
 					{
+						name: 'Get Brand Hype',
+						value: 'getBrandHype',
+						action: 'Get brand hype',
+						description: 'Hype score and history for a brand',
+					},
+					{
+						name: 'Get Credits',
+						value: 'getCredits',
+						action: 'Get credit balance',
+						description: 'Return account email and credits remaining',
+					},
+					{
 						name: 'Get Rankings',
 						value: 'getRankings',
 						action: 'Get rankings',
 						description: 'Brand rankings',
+					},
+					{
+						name: 'List Brands',
+						value: 'listBrands',
+						action: 'List brands',
+						description: 'List brands in the catalogue',
 					},
 				],
 				default: 'getBrand',
