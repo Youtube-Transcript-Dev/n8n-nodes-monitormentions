@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-monitormentions.monitorMentions",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content", "Analytics"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://www.monitormentions.com/docs/api"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/Youtube-Transcript-Dev/monitormentions/tree/main/integrations/n8n-nodes-monitormentions#readme"
+			}
+		]
+	}
+}

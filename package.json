@@ -1,0 +1,59 @@
+{
+	"name": "n8n-nodes-monitormentions",
+	"version": "0.1.0",
+	"description": "n8n community node for Monitor Mentions \u2014 Instagram brand mentions, hype, and rankings",
+	"license": "MIT",
+	"homepage": "https://www.monitormentions.com",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"monitormentions",
+		"instagram",
+		"brands"
+	],
+	"author": {
+		"name": "Monitor Mentions",
+		"email": "support@youtubetranscript.dev",
+		"url": "https://www.monitormentions.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Youtube-Transcript-Dev/n8n-nodes-monitormentions.git"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/MonitorMentionsApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/MonitorMentions/MonitorMentions.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.23.0",
+		"eslint": "^9.39.4",
+		"prettier": "^3.8.3",
+		"release-it": "^19.0.4",
+		"typescript": "^5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
